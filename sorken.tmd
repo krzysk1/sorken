@@ -4,7 +4,7 @@
 	// Plane: Glider SG 38, G101
 	// Compilation: krzysk(at)wp.pl
 	// 3D model: Mikael Ă…strand Visby 2010
-	// Date: Fri Oct 23 2015 17:57:20 GMT+0200 (Środkowoeuropejski czas letni)
+	// Date: Fri Oct 23 2015; Mar 2019
 	//-------------------------------------
      
     <[modelmanager][][]
@@ -12,11 +12,7 @@
             <[telemetry][Telemetry][]
                 <[string8][Body][Fuselage]>
                 <[bool][CompensatedVariometer][true]>
-                <[string8][PowerPosition][0.0]>
                 <[string8][Airspeed][AirspeedIndicator.IndicatedAirspeed]>
-                <[string8][BrakePosition][BrakeInput.Output]>
-                <[string8][GearPosition][0.0]>
-                <[string8][AirbrakePosition][0.0]>  
                 <[tmvector3d][LookAtPosition][ 1.1 0.0 0.0 ]>
             >
 
@@ -173,18 +169,18 @@
                 <[float64][ClAlpha][6.016057]>
                 <[float64][CdAlpha][0.630254]>
                 <[float64][CmAlpha][0.0]>
-                <[float64][ClFlap][1.500000]>
+                <[float64][ClFlap][1.5]>
                 <[float64][CdFlap][0.0]>
-                <[float64][CmFlap][-0.0200000]>
+                <[float64][CmFlap][-0.02]>
                 <[float64][Cd0Base][0.0]>
-                <[float64][ClAlphaBase][2.400000]>
-                <[float64][CdAlphaBase][1.800000]>
-                <[float64][CmAlphaBase][-0.450000]>
+                <[float64][ClAlphaBase][2.4]>
+                <[float64][CdAlphaBase][1.8]>
+                <[float64][CmAlphaBase][-0.45]>
                 <[float64][ClFlapBase][0.0]>
                 <[float64][AttachedCenter][0.0]>
                 <[float64][AttachedRange][0.174533]>
                 <[float64][StallRange][0.139626]>
-                <[float64][AttachedCenterFlap][-0.120000]>
+                <[float64][AttachedCenterFlap][-0.12]>
             >
             <[airfoil][AirfoilVerticalStabilizer][]
                 <[float64][Cl0][0.0]>
@@ -193,60 +189,59 @@
                 <[float64][ClAlpha][6.016057]>
                 <[float64][CdAlpha][0.630254]>
                 <[float64][CmAlpha][0.0]>
-                <[float64][ClFlap][1.500000]>
+                <[float64][ClFlap][1.5]>
                 <[float64][CdFlap][0.0]>
-                <[float64][CmFlap][-0.0200000]>
+                <[float64][CmFlap][-0.02]>
                 <[float64][Cd0Base][0.0]>
-                <[float64][ClAlphaBase][2.400000]>
-                <[float64][CdAlphaBase][1.800000]>
-                <[float64][CmAlphaBase][-0.450000]>
+                <[float64][ClAlphaBase][2.4]>
+                <[float64][CdAlphaBase][1.8]>
+                <[float64][CmAlphaBase][-0.45]>
                 <[float64][ClFlapBase][0.0]>
                 <[float64][AttachedCenter][0.0]>
                 <[float64][AttachedRange][0.174533]>
                 <[float64][StallRange][0.139626]>
-                <[float64][AttachedCenterFlap][-0.120000]>
+                <[float64][AttachedCenterFlap][-0.12]>
             >
             <[airfoil][AirfoilRoot][]
-                <[float64][Cl0][0.250000]>
-                <[float64][Cd0][0.006000]>
+                <[float64][Cl0][0.25]>
+                <[float64][Cd0][0.006]>
                 <[float64][Cm0][-0.040385]>
                 <[float64][ClAlpha][5.844170]>
                 <[float64][CdAlpha][0.687549]>
                 <[float64][CmAlpha][0.055092]>
-                <[float64][ClFlap][1.500000]>
+                <[float64][ClFlap][1.5]>
                 <[float64][CdFlap][0.0]>
-                <[float64][CmFlap][-0.0200000]>
+                <[float64][CmFlap][-0.02]>
                 <[float64][Cd0Base][0.003491]>
-                <[float64][ClAlphaBase][2.400000]>
-                <[float64][CdAlphaBase][1.800000]>
-                <[float64][CmAlphaBase][-0.450000]>
+                <[float64][ClAlphaBase][2.4]>
+                <[float64][CdAlphaBase][1.8]>
+                <[float64][CmAlphaBase][-0.45]>
                 <[float64][ClFlapBase][0.0]>
                 <[float64][AttachedCenter][0.0]>
                 <[float64][AttachedRange][0.174533]>
                 <[float64][StallRange][0.139626]>
-                <[float64][AttachedCenterFlap][-0.120000]>
+                <[float64][AttachedCenterFlap][-0.12]>
             >
             <[airfoil][AirfoilTip][]
-                <[float64][Cl0][0.250000]>
-                <[float64][Cd0][0.006000]>
+                <[float64][Cl0][0.25]>
+                <[float64][Cd0][0.006]>
                 <[float64][Cm0][-0.040385]>
                 <[float64][ClAlpha][5.844170]>
                 <[float64][CdAlpha][0.687549]>
                 <[float64][CmAlpha][0.055092]>
-                <[float64][ClFlap][1.500000]>
+                <[float64][ClFlap][1.5]>
                 <[float64][CdFlap][0.0]>
-                <[float64][CmFlap][-0.0200000]>
+                <[float64][CmFlap][-0.02]>
                 <[float64][Cd0Base][0.003491]>
-                <[float64][ClAlphaBase][2.400000]>
-                <[float64][CdAlphaBase][1.800000]>
-                <[float64][CmAlphaBase][-0.450000]>
+                <[float64][ClAlphaBase][2.4]>
+                <[float64][CdAlphaBase][1.8]>
+                <[float64][CmAlphaBase][-0.45]>
                 <[float64][ClFlapBase][0.0]>
                 <[float64][AttachedCenter][0.0]>
                 <[float64][AttachedRange][0.174533]>
                 <[float64][StallRange][0.139626]>
-                <[float64][AttachedCenterFlap][-0.120000]>
+                <[float64][AttachedCenterFlap][-0.12]>
             >
-
 
             // Aerowings
 		
@@ -348,7 +343,6 @@
                 <[float64][GroundEffectFactor][1.0]>
                 <[float64][GroundEffectScale][1.0]>
             >
-
 
             // Aerofuselage
 		
@@ -468,7 +462,7 @@
                 <[string8][Input][ElevatorTrimInput.Output]>
                 <[float64][Speed][0.1]>
                 <[float64][P0][0.0]>
-                <[float64][P1][0.130900]>
+                <[float64][P1][0.1309]>
                 <[float64][P2][0.0]>
                 <[float64][P3][0.0]>
             >
@@ -479,7 +473,7 @@
                 <[string8][Input][AileronTrimInput.Output]>
                 <[float64][Speed][0.1]>
                 <[float64][P0][0.0]>
-                <[float64][P1][0.065450]>
+                <[float64][P1][0.06545]>
                 <[float64][P2][0.0]>
                 <[float64][P3][0.0]>
             >
@@ -565,6 +559,11 @@
             <[temperature_sensor][TemperatureSensor][]
                 <[string8][Body][Fuselage]>
             >
+            <[clock][Clock][]
+            >
+            <[output][UniversalTime][]
+                <[string8][Input][Clock.OutputUniversalTime]>
+            >			
             <[output][OutsideAirTemperature][]
                 <[string8][Input][TemperatureSensor.Temperature]>
             >
@@ -581,20 +580,19 @@
         >
         <[pointer_list_tmgraphics][GraphicObjects][]
      
-		// Sorken_cockpit_out
-
-            <[rigidbodygraphics][Sorken_cockpit_out_216_0][]
-                <[string8][GeometryList][ sorken_cockpit_out_0 sorken_cockpit_out_144_0 sorken_cockpit_out_216_0 ]>
+            <[rigidbodygraphics][Fuselage][]
+                <[string8][GeometryList][ sorken_cockpit_out_50352_0 sorken_cockpit_out_55029_0 sorken_cockpit_out_55317_0 sorken_cockpit_out_55389_0 sorken_cockpit_out_56397_0 sorken_cockpit_out_56433_0 sorken_cockpit_out_57729_0 sorken_cockpit_out_57765_0 sorken_cockpit_out_59493_0 sorken_cockpit_out_59637_0 sorken_cockpit_out_62229_0 sorken_cockpit_out_62337_0 sorken_cockpit_out_62769_0 sorken_cockpit_out_62985_0 sorken_cockpit_out_64401_0 sorken_cockpit_out_67599_0 sorken_cockpit_out_68031_0 sorken_cockpit_out_68103_0 sorken_cockpit_out_68535_0 sorken_cockpit_out_69255_0 sorken_cockpit_out_69543_0 sorken_cockpit_out_0 sorken_cockpit_out_144_0 sorken_cockpit_out_216_0 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
+			
 			//Pedals 
-            <[graphics_input][Sorken_cockpit_outInput_0][]
-                <[uint32][InputID][ServoRudder.Output]> //controls/vstab1_rud1def
+            <[graphics_input][ServoRudderInput][]
+                <[uint32][InputID][ServoRudder.Output]>
                 <[float64][Scaling][-76.394]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_5][]
-                <[string8][Input][Sorken_cockpit_outInput_0.Output]> //controls/vstab1_rud1def
+                <[string8][Input][ServoRudderInput.Output]> 
                 <[tmvector2d][Map][(-20.0 0.349066) (20.0 -0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_288_0][]
@@ -606,7 +604,7 @@
                 <[tmvector3d][Pivot][2.875848 -0.001777 -0.738636]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_10][]
-                <[string8][Input][Sorken_cockpit_outInput_0.Output]> //controls/vstab1_rud1def
+                <[string8][Input][ServoRudderInput.Output]> 
                 <[tmvector2d][Map][(-20.0 -0.349066) (20.0 0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_792_0][]
@@ -619,7 +617,7 @@
                 <[string8][Graphics][Sorken_cockpit_out_288_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_16][]
-                <[string8][Input][Sorken_cockpit_outInput_0.Output]> //controls/vstab1_rud1def
+                <[string8][Input][ServoRudderInput.Output]>
                 <[tmvector2d][Map][(-20.0 0.349066) (20.0 -0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_1908_0][]
@@ -632,7 +630,7 @@
                 <[string8][Graphics][Sorken_cockpit_out_288_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_23][]
-                <[string8][Input][Sorken_cockpit_outInput_0.Output]> //controls/vstab1_rud1def
+                <[string8][Input][ServoRudderInput.Output]> 
                 <[tmvector2d][Map][(-20.0 0.349066) (20.0 -0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_3024_0][]
@@ -650,13 +648,13 @@
                 <[uint32][OrientationID][Fuselage.Q]>
             >
 			//Stick 
-            <[graphics_input][Sorken_cockpit_outInput_1][]
-                <[uint32][InputID][ServoLeftAileron.Output]> //sim/joystick/yoke_roll_ratio
+            <[graphics_input][ServoAileronInput][]
+                <[uint32][InputID][ServoLeftAileron.Output]> 
                 <[float64][Scaling][3.8197]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_52][]
-                <[string8][Input][Sorken_cockpit_outInput_1.Output]> //sim/joystick/yoke_roll_ratio
-                <[tmvector2d][Map][(-1.0 -0.349066) (0.0 0.000000) (1.0 0.349066)]>
+                <[string8][Input][ServoAileronInput.Output]> 
+                <[tmvector2d][Map][(-1.0 -0.349066) (0.0 0.0) (1.0 0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_24930_0][]
                 <[string8][GeometryList][ sorken_cockpit_out_24930_0 ]>
@@ -667,8 +665,8 @@
                 <[tmvector3d][Pivot][2.424455 -0.004716 -0.703568]>
             >  
             <[graphics_mapping][Sorken_cockpit_outMapping_56][]
-                <[string8][Input][Sorken_cockpit_outInput_1.Output]> //sim/joystick/yoke_roll_ratio
-                <[tmvector2d][Map][(-1.0 -0.349066) (0.0 0.000000) (1.0 0.349066)]>
+                <[string8][Input][ServoAileronInput.Output]> 
+                <[tmvector2d][Map][(-1.0 -0.349066) (0.0 0.0) (1.0 0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_24354_0][]
                 <[string8][GeometryList][ sorken_cockpit_out_24354_0 ]>
@@ -680,8 +678,8 @@
                 <[string8][Graphics][Sorken_cockpit_out_24930_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_62][]
-                <[string8][Input][Sorken_cockpit_outInput_1.Output]> //sim/joystick/yoke_roll_ratio
-                <[tmvector2d][Map][(-1.0 -0.349066) (0.0 0.000000) (1.0 0.349066)]>
+                <[string8][Input][ServoAileronInput.Output]> 
+                <[tmvector2d][Map][(-1.0 -0.349066) (0.0 0.0) (1.0 0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_24642_0][]
                 <[string8][GeometryList][ sorken_cockpit_out_24642_0 ]>
@@ -693,13 +691,13 @@
                 <[string8][Graphics][Sorken_cockpit_out_24930_0]>
             >
     
-            <[graphics_input][Sorken_cockpit_outInput_2][]
-                <[uint32][InputID][ServoElevator.Output]> //sim/joystick/yoke_pitch_ratio
+            <[graphics_input][ServoElevatorInput][]
+                <[uint32][InputID][ServoElevator.Output]> 
                 <[float64][Scaling][-3.8197]>   
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_68][]
-                <[string8][Input][Sorken_cockpit_outInput_2.Output]> //sim/joystick/yoke_pitch_ratio
-                <[tmvector2d][Map][ (-1.0 -0.349066) (0.0 0.000000) (1.0 0.349066)]>
+                <[string8][Input][ServoElevatorInput.Output]> 
+                <[tmvector2d][Map][ (-1.0 -0.349066) (0.0 0.0) (1.0 0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_27222_0][]
                 <[string8][GeometryList][ sorken_cockpit_out_27222_0 ]>
@@ -711,8 +709,8 @@
                 <[string8][Graphics][Sorken_cockpit_out_24930_0]>
             >  
             <[graphics_mapping][Sorken_cockpit_outMapping_72][]
-                <[string8][Input][Sorken_cockpit_outInput_2.Output]> //sim/joystick/yoke_pitch_ratio
-                <[tmvector2d][Map][(-1.0 0.366519) (0.0 0.000000) (1.0 -0.366519)]>
+                <[string8][Input][ServoElevatorInput.Output]> 
+                <[tmvector2d][Map][(-1.0 0.366519) (0.0 0.0) (1.0 -0.366519)]>
             >
             <[hingedbodygraphics][Sorken_dummy_72][]
                 <[string8][GeometryList][ dummy_1 ]>
@@ -724,8 +722,8 @@
                 <[string8][Graphics][Sorken_cockpit_out_27222_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_75][]
-                <[string8][Input][Sorken_cockpit_outInput_1.Output]> //sim/joystick/yoke_roll_ratio
-                <[tmvector2d][Map][(-1.0 0.017453) (0.0 0.000000) (1.0 -0.017453)]>
+                <[string8][Input][ServoAileronInput.Output]> 
+                <[tmvector2d][Map][(-1.0 0.017453) (0.0 0.0) (1.0 -0.017453)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_26502_0][]
                 <[string8][GeometryList][ sorken_cockpit_out_26502_0 ]>
@@ -737,8 +735,8 @@
                 <[string8][Graphics][Sorken_dummy_72]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_81][]
-                <[string8][Input][Sorken_cockpit_outInput_2.Output]> //sim/joystick/yoke_pitch_ratio
-                <[tmvector2d][Map][(-1.0 0.349066) (0.0 0.000000) (1.0 -0.349066)]>
+                <[string8][Input][ServoElevatorInput.Output]> 
+                <[tmvector2d][Map][(-1.0 0.349066) (0.0 0.0) (1.0 -0.349066)]>
             >
             <[hingedbodygraphics][Sorken_dummy_81][]
                 <[string8][GeometryList][ dummy_2 ]>
@@ -750,8 +748,8 @@
                 <[string8][Graphics][Sorken_cockpit_out_27222_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_84][]
-                <[string8][Input][Sorken_cockpit_outInput_1.Output]> //sim/joystick/yoke_roll_ratio
-                <[tmvector2d][Map][(-1.0 -0.017453) (0.0 0.000000) (1.0 0.017453)]>
+                <[string8][Input][ServoAileronInput.Output]> 
+                <[tmvector2d][Map][(-1.0 -0.017453) (0.0 0.0) (1.0 0.017453)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_26862_0][]
                 <[string8][GeometryList][ sorken_cockpit_out_26862_0 ]>
@@ -774,12 +772,12 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
-            <[graphics_input][Sorken_cockpit_outInput_3][]
-                <[uint32][InputID][ServoRightAileron.Output]> //controls/wing1r_ail1def
+            <[graphics_input][ServoRightAileronInput][]
+                <[uint32][InputID][ServoRightAileron.Output]> 
                 <[float64][Scaling][3.8197]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_94][]
-                <[string8][Input][Sorken_cockpit_outInput_3.Output]> //controls/wing1r_ail1def
+                <[string8][Input][ServoRightAileronInput.Output]> 
                 <[tmvector2d][Map][(-1.0 0.349066) (1.0 -0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_39354_0][]
@@ -792,7 +790,7 @@
                 <[tmvector3d][Pivot][0.663331 -4.412554 0.353649]>
             > 
             <[graphics_mapping][Sorken_cockpit_outMapping_98][]
-                <[string8][Input][Sorken_cockpit_outInput_3.Output]> //controls/wing1r_ail1def
+                <[string8][Input][ServoRightAileronInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.27926) (1.0 -0.27926)]> //0.006981)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_39066_0][]
@@ -805,7 +803,7 @@
                 <[string8][Graphics][Sorken_cockpit_out_39354_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_104][]
-                <[string8][Input][Sorken_cockpit_outInput_3.Output]> //controls/wing1r_ail1def
+                <[string8][Input][ServoRightAileronInput.Output]> 
                 <[tmvector2d][Map][(-1.0 0.27926) (1.0 -0.27926)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_39210_0][]
@@ -823,12 +821,12 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
-            <[graphics_input][Sorken_cockpit_outInput_4][]
-                <[uint32][InputID][ServoLeftAileron.Output]> //controls/wing1l_ail1def
+            <[graphics_input][ServoLeftAileronInput][]
+                <[uint32][InputID][ServoLeftAileron.Output]>
                 <[float64][Scaling][3.8197]>  
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_115][]
-                <[string8][Input][Sorken_cockpit_outInput_4.Output]> //controls/wing1l_ail1def
+                <[string8][Input][ServoLeftAileronInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.349066) (1.0 -0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_42180_0][]
@@ -841,7 +839,7 @@
                 <[tmvector3d][Pivot][0.662073 4.197606 0.356383]>
             >  
             <[graphics_mapping][Sorken_cockpit_outMapping_119][]
-                <[string8][Input][Sorken_cockpit_outInput_4.Output]> //controls/wing1l_ail1def
+                <[string8][Input][ServoLeftAileronInput.Output]> 
                 <[tmvector2d][Map][(-1.0 -0.27926) (1.0 0.27926)]> 
             >
             <[hingedbodygraphics][Sorken_cockpit_out_41892_0][]
@@ -854,7 +852,7 @@
                 <[string8][Graphics][Sorken_cockpit_out_42180_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_125][]
-                <[string8][Input][Sorken_cockpit_outInput_4.Output]> //controls/wing1l_ail1def
+                <[string8][Input][ServoLeftAileronInput.Output]> 
                 <[tmvector2d][Map][(-1.0 -0.27926) (1.0 0.27926)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_42036_0][]
@@ -868,8 +866,8 @@
             >
 			//Elevator 
             <[graphics_mapping][Sorken_cockpit_outMapping_135][]
-                <[string8][Input][Sorken_cockpit_outInput_2.Output]> //sim/joystick/yoke_pitch_ratio
-                <[tmvector2d][Map][(-1.0 0.349066) (0.0 0.000000) (1.0 -0.349066)]>
+                <[string8][Input][ServoElevatorInput.Output]> 
+                <[tmvector2d][Map][(-1.0 0.349066) (0.0 0.0) (1.0 -0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_44430_0][]
                 <[string8][GeometryList][ sorken_cockpit_out_44430_0 ]>
@@ -880,8 +878,8 @@
                 <[tmvector3d][Pivot][-2.409820 -0.004848 0.342470]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_140][]
-                <[string8][Input][Sorken_cockpit_outInput_2.Output]> //sim/joystick/yoke_pitch_ratio
-                <[tmvector2d][Map][(-1.0 -0.349066) (0.0 0.000000) (1.0 0.349066)]>
+                <[string8][Input][ServoElevatorInput.Output]> 
+                <[tmvector2d][Map][(-1.0 -0.349066) (0.0 0.0) (1.0 0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_46482_0][]
                 <[string8][GeometryList][ sorken_cockpit_out_46482_0 ]>
@@ -893,8 +891,8 @@
                 <[string8][Graphics][Sorken_cockpit_out_44430_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_146][]
-                <[string8][Input][Sorken_cockpit_outInput_2.Output]> //sim/joystick/yoke_pitch_ratio
-                <[tmvector2d][Map][(-1.0 -0.349066) (0.0 0.000000) (1.0 0.349066)]>
+                <[string8][Input][ServoElevatorInput.Output]> 
+                <[tmvector2d][Map][(-1.0 -0.349066) (0.0 0.0) (1.0 0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_47058_0][]
                 <[string8][GeometryList][ sorken_cockpit_out_47058_0 ]>
@@ -907,7 +905,7 @@
             >
 			//Rudder   
             <[graphics_mapping][Sorken_cockpit_outMapping_153][]
-                <[string8][Input][Sorken_cockpit_outInput_0.Output]> //controls/vstab1_rud1def
+                <[string8][Input][ServoRudderInput.Output]> 
                 <[tmvector2d][Map][(-20.0 0.349066) (20.0 -0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_47634_0][]
@@ -919,7 +917,7 @@
                 <[tmvector3d][Pivot][-2.384360 -0.005709 0.449565]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_158][]
-                <[string8][Input][Sorken_cockpit_outInput_0.Output]> //controls/vstab1_rud1def
+                <[string8][Input][ServoRudderInput.Output]> 
                 <[tmvector2d][Map][(-20.0 -0.349066)  (20.0 0.349066)]> //(0.0 -0.001623)
             >
             <[hingedbodygraphics][Sorken_cockpit_out_50064_0][]
@@ -932,7 +930,7 @@
                 <[string8][Graphics][Sorken_cockpit_out_47634_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_164][]
-                <[string8][Input][Sorken_cockpit_outInput_0.Output]> //controls/vstab1_rud1def
+                <[string8][Input][ServoRudderInput.Output]> 
                 <[tmvector2d][Map][(-20.0 0.349066) (20.0 -0.349066)]>  // (0.0 0.001623)
             >
             <[hingedbodygraphics][Sorken_cockpit_out_50208_0][]
@@ -944,54 +942,30 @@
                 <[tmvector3d][Pivot][-2.421675 0.076691 0.151406]>
                 <[string8][Graphics][Sorken_cockpit_out_47634_0]>
             >
-			//Fuselage 
-            <[rigidbodygraphics][Sorken_cockpit_out_62769_0][]
-                <[string8][GeometryList][ sorken_cockpit_out_50352_0 sorken_cockpit_out_55029_0 sorken_cockpit_out_55317_0 sorken_cockpit_out_55389_0 sorken_cockpit_out_56397_0 sorken_cockpit_out_56433_0 sorken_cockpit_out_57729_0 sorken_cockpit_out_57765_0 sorken_cockpit_out_59493_0 sorken_cockpit_out_59637_0 sorken_cockpit_out_62229_0 sorken_cockpit_out_62337_0 sorken_cockpit_out_62769_0 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-            >
-            <[rigidbodygraphics][Sorken_cockpit_out_62985_0][]
-                <[string8][GeometryList][ sorken_cockpit_out_62985_0 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-            >
-            <[rigidbodygraphics][Sorken_cockpit_out_64401_0][]
-                <[string8][GeometryList][ sorken_cockpit_out_64401_0 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-            >
-            <[rigidbodygraphics][Sorken_cockpit_out_66792_0][]
-                <[string8][GeometryList][ sorken_cockpit_out_66792_0 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-            >
-            <[rigidbodygraphics][Sorken_cockpit_out_69543_0][]
-                <[string8][GeometryList][ sorken_cockpit_out_67599_0 sorken_cockpit_out_68031_0 sorken_cockpit_out_68103_0 sorken_cockpit_out_68535_0 sorken_cockpit_out_69255_0 sorken_cockpit_out_69543_0 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-            >   
 
-		// Pilot
-
+			// Pilot
             <[rigidbodygraphics][Pilot][]
                 <[string8][GeometryList][ ask21_cockpit_out_324_2 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][ShowInside][12]>   
             >
-      
+           <[graphics_input][UniversalTimeInput][]
+                <[uint32][InputID][UniversalTime.Output]>
+            >      
             <[graphics_flasher][BeaconRotation][]
                 <[string8][Function][Triangle]>
+                <[string8][InputTime][UniversalTimeInput.Output]>					
                 <[float64][Period][8.493]>
                 <[float64][Minimum][0.0]>
             >  
             <[graphics_mapping][obj3Input_0][]
-                <[uint32][Input][BeaconRotation.Output]> //animation/airport_beacon_rotation
+                <[uint32][Input][BeaconRotation.Output]> 
                 <[tmvector2d][Map][(0 0) (1 360) ]>  
             >
             <[graphics_mapping][obj3Mapping_90][]
-                <[string8][Input][obj3Input_0.Output]> //animation/airport_beacon_rotation
-                <[tmvector2d][Map][(0.0 0.000000) (140.0 -0.434587) (280.0 0.174533) (360.0 -0.002443) ]>
+                <[string8][Input][obj3Input_0.Output]>
+                <[tmvector2d][Map][(0.0 0.0) (140.0 -0.434587) (280.0 0.174533) (360.0 -0.002443) ]>
             >  
             <[hingedbodygraphics][PilotHead][]
                 <[string8][GeometryList][ ask21_cockpit_out_7392_2 helmet_glass helmet_out helmet_in helmet_pivot ]>
@@ -1020,7 +994,7 @@
                 <[string8][InputPitch][GliderPitch.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][glider.wav]>
+                <[string8][SoundFile][wind.wav]>
             >
             <[soundinput][SideSlip][]
                 <[uint32][InputID][SideSlip.Output]>
@@ -1034,7 +1008,7 @@
                 <[string8][InputPitch][1.0]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][glider_sideslip.wav]>
+                <[string8][SoundFile][sideslip.wav]>
                 <[bool][External][false]>
             >
             <[soundinput][GroundRollLoad][]
@@ -1064,7 +1038,7 @@
                 <[string8][InputPitch][GroundRollPitch.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][ground_roll.wav]>
+                <[string8][SoundFile][skid_dry.wav]>
             >
             <[soundinput][Acceleration][]
                 <[uint32][InputID][AccelerometerNeedle.Output]>

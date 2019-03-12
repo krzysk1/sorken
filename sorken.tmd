@@ -13,7 +13,6 @@
                 <[string8][Body][Fuselage]>
                 <[bool][CompensatedVariometer][true]>
                 <[string8][Airspeed][AirspeedIndicator.IndicatedAirspeed]>
-                <[tmvector3d][LookAtPosition][ 1.1 0.0 0.0 ]>
             >
 
             // Cameras
@@ -393,8 +392,11 @@
                 <[string8][Input][Controls.HookRelease]>
             >  
             <[input_default][ElevatorTrimInput][]
-                <[tmvector2d][Range][ -1.0 1.0 ]>
                 <[string8][Input][Controls.Trim]>
+                <[uint][Positions][401]>
+                <[tmvector2d][Range][ -1.0 1.0 ]>
+                <[float64][Value][0.0]>
+                <[float64][Speed][0.1]>
             >
             <[sender][SenderTrim][]
                 <[string8][Input][ElevatorTrimInput.Output]>

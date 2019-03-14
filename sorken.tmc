@@ -14,8 +14,8 @@
 		<[tmvector2d][NormalSpeedRange][ 15.5 30.0 ]>
 		<[tmvector2d][CautionSpeedRange][ 30.0 31.0 ]>
 		<[tmvector2d][FlapSpeedRange][ 0.0 0.0 ]>
-        <[float64][MaximumAltitude][0.0]>
-        <[float64][CruiseAltitude] [0.0]>
+        <[float64][MaximumAltitude][2000.0]>
+        <[float64][CruiseAltitude] [1000.0]>
         <[float64][QSpan][10.8]>
         <[float64][QMass][210.0]>
         <[float64][QSpeed][31.0]>
@@ -30,90 +30,3 @@
 		<[string8][Pilot][]>
     >
 >
-// Cockpit type: Glider
-// Vso_kts: 31.0 stall speed in landing configuration
-// Vs_kts: 30.0 stall speed
-// Vfe1_kts: 999.0 flaps extended 1st dep
-// Vfem_kts: 999.0 flaps extended max
-// Vle_kts: 99999.0 maximum landing-gear extended speed
-// Vno_kts: 60.0 maximum structural cruising speed or maximum speed for normal operations
-// Vne_kts: 72.0 never exeed speed
-// Empty mass [lb]: 220 [kg]: 99.8
-// max mass [lb]: 463 [kg]: 210.0
-// load G: -0.0 to 99.9
-// Ground altitude: 4.3926 3.40 deg
-// TCAS equiped
-// Stall warning AOA 10.0
-// gear warn above flap 0.500000000
-// gear warn below thro pct 50.0
-//   no|area|R0|R1|T0|T1|span|Croot|Ctip|x|y|z|fl0|fl1|flb|L_R|name|description
-//   8|9.04|NACA 2412 (popular).afl ||||5.39|1.68|1.68|0.982980|2.697480|0.365760|ailn1|||L|LeftWing|
-//   9|9.04|NACA 2412 (popular).afl ||||5.39|1.68|1.68|0.982980|-2.697480|0.365760|ailn1|||R|RightWing|
-//   16|1.51|NACA 0009 (symmetrical).afl ||||1.65|0.91|0.91|-2.423160|0.822960|0.365760|elev1|||L|LeftStabilizer|
-//   17|1.51|NACA 0009 (symmetrical).afl ||||1.65|0.91|0.91|-2.423160|-0.822960|0.365760|elev1|||R|RightStabilizer|
-//   18|0.86|NACA 0009 (symmetrical).afl ||||1.13|0.91|0.61|-2.644393|0.000000|0.441874|rudd1|||R|VertStabilizer1|
-//   parts no|radius|name|size x*y*z|Cd|description|
-//   gear no|name|X|Y|Z|Type|Fraction|Length|radius|retract|SteerLo|SteerHi|weight
-//   gear 0|FrontWheelHull|2.499360|0.000000|-0.914400|2|0.000000|0.000000|0.304800|0.000000|0.000000|0.000000|3.8
-//   gear 1|TailWheelHull|-2.286000|0.000000|-0.091440|2|0.101403|0.000000|0.152400|0.000000|0.000000|0.000000|15.3
-//   gear 2|RightWheelHull|0.304800|-5.334001|0.335280|2|0.000000|0.000000|0.152400|0.000000|0.000000|0.000000|3.8
-//   gear 3|WheelHull4|0.304800|5.333999|0.335280|2|0.000000|0.000000|0.152400|0.000000|0.000000|0.000000|3.8
-//   gear 4|MainWheelHull|1.219200|0.000000|-0.883920|2|0.898597|0.000000|0.304800|0.000000|0.000000|0.000000|6.1
-// CG range: 3.35 to 0.00
-// Rigidbody: Fuselage 42.0 kg at 1.066800
-// Rigidbody: 8 LeftWing 12.5 kg at 0.982980
-// Rigidbody: 9 RightWing 12.5 kg at 0.982980
-// Gearbody: 0 FrontWheelHull 3.8 kg at 2.499360
-// Gearbody: 1 TailWheelHull 15.3 kg at -2.286000
-// Gearbody: 2 RightWheelHull 3.8 kg at 0.304800
-// Gearbody: 3 WheelHull4 3.8 kg at 0.304800
-// Gearbody: 4 MainWheelHull 6.1 kg at 1.219200
-// CG (fuselage): 1.07 (plane) 0.54 (delta) 0.22
-// Plane ref: 0.000000 0.000000 0.000000
-// Elevator -15.0 to 15.0 width 0.50  <[float64][Scaling][3.8197]>
-// Aileron -15.0 to 15.0 width 0.30  <[float64][Scaling][3.8197]>
-// Rudder -15.0 to 15.0 width 0.50  <[float64][Scaling][3.8197]>
-//-------------------------------------------------------
-// Sorken G101 Schulegleiter SG38 empty mass [kg] :99.8 fuelled [kg] :99.8 max [kg] :210.0
-//-------------------------------------------------------
-// No 0 FrontWheelHull single   
-// Brakes   Fraction weight: 0.00000 kg :0.0
-// Pivot lon lat vert: 2.499360 0.000000 -0.914400
-// Length [m]: 0.0000 Radius [m]: 0.3048 Semi-width [m]: 0.0610
-// Dep_rat: 1 Scon: 1462.651855469
-// Deflection [m]- zero load : 0.0000 empty :0.0000 max :0.0000
-// Damping constants (lb/(ft/s)) :73.132598877 kg/(m/s) : 108.8333
-//-------------------------------------------------------
-// No 1 TailWheelHull single   
-// Brakes   Fraction weight: 0.10140 kg :10.1
-// Pivot lon lat vert: -2.286000 0.000000 -0.091440
-// Length [m]: 0.0000 Radius [m]: 0.1524 Semi-width [m]: 0.1524
-// Dep_rat: 1 Scon: 365.662963867
-// Deflection [m]- zero load : 0.0391 empty :0.0000 max :0.0000
-// Damping constants (lb/(ft/s)) :18.283149719 kg/(m/s) : 27.2083
-//-------------------------------------------------------
-// No 2 RightWheelHull single   
-// Brakes   Fraction weight: 0.00000 kg :0.0
-// Pivot lon lat vert: 0.304800 -5.334001 0.335280
-// Length [m]: 0.0000 Radius [m]: 0.1524 Semi-width [m]: 0.1524
-// Dep_rat: 1 Scon: 182.831481934
-// Deflection [m]- zero load : 0.0000 empty :0.0000 max :0.0000
-// Damping constants (lb/(ft/s)) :9.14157486 kg/(m/s) : 13.6042
-//-------------------------------------------------------
-// No 3 WheelHull4 single   
-// Brakes   Fraction weight: 0.00000 kg :0.0
-// Pivot lon lat vert: 0.304800 5.333999 0.335280
-// Length [m]: 0.0000 Radius [m]: 0.1524 Semi-width [m]: 0.1524
-// Dep_rat: 1 Scon: 182.831481934
-// Deflection [m]- zero load : 0.0000 empty :0.0000 max :0.0000
-// Damping constants (lb/(ft/s)) :9.14157486 kg/(m/s) : 13.6042
-//-------------------------------------------------------
-// No 4 MainWheelHull single   
-// Brakes   Fraction weight: 0.89860 kg :89.7
-// Pivot lon lat vert: 1.219200 0.000000 -0.883920
-// Length [m]: 0.0000 Radius [m]: 0.3048 Semi-width [m]: 0.0305
-// Dep_rat: 1 Scon: 1462.651855469
-// Deflection [m]- zero load : 0.0867 empty :0.0000 max :0.0000
-// Damping constants (lb/(ft/s)) :73.132598877 kg/(m/s) : 108.8333
-//-------------------------------------------------------
- 

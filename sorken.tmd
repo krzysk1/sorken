@@ -3,7 +3,7 @@
 	//-------------------------------------
 	// Plane: Glider SG 38, G101
 	// Compilation: krzysk(at)wp.pl
-	// 3D model: Mikael Ă…strand Visby 2010
+	// 3D model: Mikael Ăstrand, Visby 2010
 	// Date: Fri Oct 23 2015; Mar 2019
 	//-------------------------------------
      
@@ -583,7 +583,7 @@
         <[pointer_list_tmgraphics][GraphicObjects][]
      
             <[rigidbodygraphics][Fuselage][]
-                <[string8][GeometryList][ sorken_cockpit_out_50352_0 sorken_cockpit_out_55029_0 sorken_cockpit_out_55317_0 sorken_cockpit_out_55389_0 sorken_cockpit_out_56397_0 sorken_cockpit_out_56433_0 sorken_cockpit_out_57729_0 sorken_cockpit_out_57765_0 sorken_cockpit_out_59493_0 sorken_cockpit_out_59637_0 sorken_cockpit_out_62229_0 sorken_cockpit_out_62337_0 sorken_cockpit_out_62769_0 sorken_cockpit_out_62985_0 sorken_cockpit_out_64401_0 sorken_cockpit_out_67599_0 sorken_cockpit_out_68031_0 sorken_cockpit_out_68103_0 sorken_cockpit_out_68535_0 sorken_cockpit_out_69255_0 sorken_cockpit_out_69543_0 sorken_cockpit_out_0 sorken_cockpit_out_144_0 sorken_cockpit_out_216_0 ]>
+                <[string8][GeometryList][ sorken_cockpit_out_50352_0 sorken_cockpit_out_55029_0 sorken_cockpit_out_55317_0 sorken_cockpit_out_55389_0 sorken_cockpit_out_56397_0 sorken_cockpit_out_56433_0 sorken_cockpit_out_57729_0 sorken_cockpit_out_57765_0 sorken_cockpit_out_59493_0 sorken_cockpit_out_59637_0 sorken_cockpit_out_62229_0 sorken_cockpit_out_62337_0 sorken_cockpit_out_62769_0 sorken_cockpit_out_62985_0 sorken_cockpit_out_64401_0 sorken_cockpit_out_66792_0 sorken_cockpit_out_67599_0 sorken_cockpit_out_68031_0 sorken_cockpit_out_68103_0 sorken_cockpit_out_68535_0 sorken_cockpit_out_69255_0 sorken_cockpit_out_69543_0 sorken_cockpit_out_0 sorken_cockpit_out_144_0 sorken_cockpit_out_216_0 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
@@ -910,7 +910,7 @@
                 <[string8][Input][ServoRudderInput.Output]> 
                 <[tmvector2d][Map][(-20.0 0.349066) (20.0 -0.349066)]>
             >
-            <[hingedbodygraphics][Sorken_cockpit_out_47634_0][]
+            <[hingedbodygraphics][RudderGraphics][]
                 <[string8][GeometryList][ sorken_cockpit_out_47634_0 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
@@ -929,7 +929,7 @@
                 <[string8][InputAngle][Sorken_cockpit_outMapping_158.Output]>
                 <[tmvector3d][Axis][0.000853 -0.011686 0.999931]>
                 <[tmvector3d][Pivot][-2.422604 -0.088044 0.144155]>
-                <[string8][Graphics][Sorken_cockpit_out_47634_0]>
+                <[string8][Graphics][RudderGraphics]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_164][]
                 <[string8][Input][ServoRudderInput.Output]> 
@@ -942,7 +942,7 @@
                 <[string8][InputAngle][Sorken_cockpit_outMapping_164.Output]>
                 <[tmvector3d][Axis][-0.001654 -0.005294 -0.999985]>
                 <[tmvector3d][Pivot][-2.421675 0.076691 0.151406]>
-                <[string8][Graphics][Sorken_cockpit_out_47634_0]>
+                <[string8][Graphics][RudderGraphics]>
             >
 
 			// Pilot

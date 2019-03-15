@@ -561,6 +561,13 @@
             <[temperature_sensor][TemperatureSensor][]
                 <[string8][Body][Fuselage]>
             >
+            <[accelerometer][Accelerometer][]
+                <[string8][Body][Fuselage]>
+                <[tmvector3d][R0][0 0 0]>
+            >
+            <[output][AccelerometerNeedle][]
+                <[string8][Input][Accelerometer.Acceleration]>
+            >			
             <[clock][Clock][]
             >
             <[output][UniversalTime][]
@@ -975,8 +982,8 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][obj3Mapping_90.Output]>
                 <[tmvector3d][Axis][0.0 0.0 -1.0]>
-                <[tmvector3d][Pivot][1.9315 0.0 -0.0841]>   
-                <[uint32][ShowInside][12]>   
+                <[tmvector3d][Pivot][1.9315 0.0 -0.0841]> 
+                <[uint32][ShowInside][12]>
             >
         >
         <[pointer_list_tmsound][SoundObjects][]
@@ -985,11 +992,11 @@
             >
             <[soundmapping][GliderVolume][]
                 <[string8][Input][Airspeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (15.0 0.0) (200.0 1.0) ]>
+                <[tmvector2d][Map][ (0.0 0.0) (5.5 0.01) (10.0 0.2) (43.3 0.8) ]>
             >
             <[soundmapping][GliderPitch][]
                 <[string8][Input][Airspeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.66) ( 33.33 1.0 ) (200.0 3.0) ]>
+                <[tmvector2d][Map][ (0.0 0.66) (33.33 1.0) (200.0 3.0) ]>
             >
             <[soundloop][GliderVolumeLoop][]
                 <[string8][InputVolume][GliderVolume.Output]>
@@ -998,34 +1005,20 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][wind.wav]>
             >
-            <[soundinput][SideSlip][]
-                <[uint32][InputID][SideSlip.Output]>
-            >
-            <[soundmapping][SideSlipVolume][]
-                <[string8][Input][SideSlip.Output]>
-                <[tmvector2d][Map][ (-30.0 0.5) (0.0 0.0 ) (30.0 0.5) ]>
-            >
-            <[soundloop][SideSlipVolumeLoop][]
-                <[string8][InputVolume][SideSlipVolume.Output]>
-                <[string8][InputPitch][1.0]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][sideslip.wav]>
-                <[bool][External][false]>
-            >
+
             <[soundinput][GroundRollLoad][]
                 <[uint32][InputID][GroundRollLoad.Output]>
             >
             <[soundmapping][GroundRollFactor][]
                 <[string8][Input][GroundRollLoad.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (1000.0 1.0 ) ]>
+                <[tmvector2d][Map][ (0.0 0.0) (30.0 1.0) ]>
             >
             <[soundinput][GroundRollSpeed][]
                 <[uint32][InputID][GroundRollSpeed.Output]>
             >
             <[soundmapping][GroundRollFactor1][]
                 <[string8][Input][GroundRollSpeed.Output]>
-                <[tmvector2d][Map][ (-20.0 1.0) (0.0 0.0) (20.0 1.0 ) ]>
+                <[tmvector2d][Map][ (-15.0 0.5) (0.0 0.0) (15.0 0.5) ]>
             >
             <[soundmultiply][GroundRollVolume][]
                 <[string8][Input0][GroundRollFactor.Output]>
@@ -1033,7 +1026,7 @@
             >
             <[soundmapping][GroundRollPitch][]
                 <[string8][Input][GroundRollSpeed.Output]>
-                <[tmvector2d][Map][ (-50.0 1.5) (0.0 0.5) (50.0 1.5 ) ]>
+                <[tmvector2d][Map][ (-30.0 1.5) (0.0 0.5) (30.0 1.5) ]>
             >
             <[soundloop][GroundRollLoop][]
                 <[string8][InputVolume][GroundRollVolume.Output]>
@@ -1047,7 +1040,7 @@
             >
             <[soundmapping][AccelerationMapping][]
                 <[string8][Input][Acceleration.Output]>
-                <[tmvector2d][Map][ (-100.0 1.5) ( 0.0 0.0 ) (100.0 1.5) ]>
+                <[tmvector2d][Map][ (-20.0 1.0) (-10.0 0.0) (10.0 0.0) (20.0 1.0) ]>
             >
             <[soundmultiply][HighVolume][]
                 <[string8][Input0][AccelerationMapping.Output]>
@@ -1058,7 +1051,7 @@
                 <[string8][InputPitch][1.0]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][glider_high_g.wav]>
+                <[string8][SoundFile][creak.wav]>
             >
         >
     >

@@ -4,9 +4,9 @@
 	// Plane: Glider SG 38, G101
 	// Compilation: krzysk(at)wp.pl
 	// 3D model: Mikael Ăstrand, Visby 2010
-	// Date: Fri Oct 23 2015; Mar 2019
+	// Date: Fri Oct 23 2015; July 2019
 	//-------------------------------------
-     
+
     <[modelmanager][][]
         <[pointer_list_tmuniverse][DynamicObjects][]
             <[telemetry][Telemetry][]
@@ -19,7 +19,7 @@
 
             <[camera][CameraFollow][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ 10.0 0.0 -1.25000 ]>
+                <[tmvector3d][R0][ 10.0 0.0 -1.25 ]>
                 <[tmvector3d][Direction][1.0 0.0 0.0]>
             >
             <[camera_head][CameraPilot][]
@@ -46,9 +46,8 @@
                 <[tmvector3d][Direction][ 0.9486 0.0 -0.3164 ]>
             >
 
-
             // Rigidbodies
- 
+
             <[rigidbody][Fuselage][]
                 <[float64][Mass][53.4]>
                 <[tmvector3d][InertiaLength][3.134196 1.092875 1.237448]>
@@ -85,66 +84,45 @@
                 <[tmvector3d][R0][ 1.402080 0.0 0.365760 ]>
                 <[uint32][Type][0]>
             >
-     
+
             <[collisionhull][CollisionFuselage][]
                 <[float64][K][212000]>
                 <[float64][D][2120]>
                 <[string8][Body][Fuselage]>
-                <[string8][Geometry][sorken_cockpit_out_50352_0]>   
+                <[string8][Geometry][sorken_cockpit_out_50352_0]>
             >
             <[collisionhull][CollisionLeftWing][]
                 <[float64][K][50000]>
                 <[float64][D][750]>
                 <[string8][Body][LeftWing]>
                 <[string8][Geometry][sorken_cockpit_out_64401_0]>
-                <[bool][CrashOnContact][true]>
+                <[bool][CrashOnContact][false]>
             >
             <[collisionhull][CollisionRightWing][]
                 <[float64][K][50000]>
                 <[float64][D][750]>
                 <[string8][Body][RightWing]>
                 <[string8][Geometry][sorken_cockpit_out_62985_0]>
-                <[bool][CrashOnContact][true]>
+                <[bool][CrashOnContact][false]>
             >
 
             // Hook
-		
+
             <[hook][WinchHook][]
-                <[string8][Body][Fuselage]> 
+                <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][3.0851 0.0 -0.8633]>
                 <[string8][ReleaseControl][HookInput.Output]>
             >
 
             // Gears
-		
-            <[wheel][NoseWheelHull][]
-                <[float64][K][4000]>
-                <[float64][D][30]>
-                <[float64][Radius][0.304800]>
-                <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][2.499360 0.0 -0.914400]>
-            >
-            <[wheel][TailWheelHull][]
-                <[float64][K][4000]>
-                <[float64][D][30]>
-                <[float64][Radius][0.152400]>
-                <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][-2.286000 0.0 -0.091440]>
-            >
-            <[wheel][RightWheelHull][]
-                <[float64][K][4000]>
-                <[float64][D][30]>
-                <[float64][Radius][0.152400]>
-                <[string8][Body][RightWing]>
-                <[tmvector3d][R0][0.304800 -5.334001 0.335280]>
-            >
-            <[wheel][WheelHull4][]
-                <[float64][K][4000]>
-                <[float64][D][30]>
-                <[float64][Radius][0.152400]>
-                <[string8][Body][LeftWing]>
-                <[tmvector3d][R0][0.304800 5.333999 0.335280]>
-            >
+
+            // <[wheel][NoseWheelHull][]
+                // <[float64][K][4000]>
+                // <[float64][D][30]>
+                // <[float64][Radius][0.304800]>
+                // <[string8][Body][Fuselage]>
+                // <[tmvector3d][R0][2.499360 0.0 -0.914400]>
+            // >
             <[wheel][MainWheelHull][]
                 <[float64][K][36000]>
                 <[float64][D][270]>
@@ -160,7 +138,7 @@
             >
 
             // Airfoils
- 
+
             <[airfoil][AirfoilHorizontalStabilizer][]
                 <[float64][Cl0][0.0]>
                 <[float64][Cd0][0.005200]>
@@ -243,7 +221,7 @@
             >
 
             // Aerowings
-		
+
             <[aerowing][LeftWingAero][]
                 <[string8][Body][LeftWing]>
                 <[float64][Span][5.394960]>
@@ -344,7 +322,7 @@
             >
 
             // Aerofuselage
-		
+
             <[aerofuselage][FuselageAero][]
                 <[string8][Body][Fuselage]>
                 <[float64][StationX][  3.1222 2.6416  1.8415 1.4135 0.6590 -2.3609 ]>
@@ -361,9 +339,8 @@
                 <[float64][Cm][ 0.0 ]>
             >
 
-
             // Control Inputs
-  
+
             <[input_default][AileronInput][]
                 <[tmvector2d][Range][ -1.0 1.0 ]>
                 <[string8][Input][Controls.Roll.Input]>
@@ -390,7 +367,7 @@
             >
             <[input_default][HookInput][]
                 <[string8][Input][Controls.HookRelease]>
-            >  
+            >
             <[input_default][ElevatorTrimInput][]
                 <[string8][Input][Controls.Trim]>
                 <[uint][Positions][401]>
@@ -426,7 +403,7 @@
             >
 
             // Servos
-		
+
             <[servoclassic][ServoLeftAileron][]
                 <[string8][Input][AileronInput.Output]>
                 <[float64][Speed][10.0]>
@@ -503,7 +480,7 @@
             >
 
             // Indicators & outputs
- 
+
             <[output_free][ServoRudderTrimOutput][]
                 <[string8][Input][ServoRudderTrim.Output]>
             >
@@ -519,6 +496,7 @@
             >
             <[altimeter][Altimeter][]
                 <[string8][StaticPressure][PitotTube.StaticPressure]>
+                <[float64][AltimeterSetting][PressureSettingInput.Output]>
             >
             <[sender][SenderAltitude][]
                 <[string8][Input][Altimeter.PressureAltitude]>
@@ -567,12 +545,12 @@
             >
             <[output][AccelerometerNeedle][]
                 <[string8][Input][Accelerometer.Acceleration]>
-            >			
+            >
             <[clock][Clock][]
             >
             <[output][UniversalTime][]
                 <[string8][Input][Clock.OutputUniversalTime]>
-            >			
+            >
             <[output][OutsideAirTemperature][]
                 <[string8][Input][TemperatureSensor.Temperature]>
             >
@@ -585,23 +563,22 @@
             <[output][VerticalSpeedIndicatorNeedle][]
                 <[string8][Input][VerticalSpeedIndicator.VerticalSpeed]>
             >
-
         >
         <[pointer_list_tmgraphics][GraphicObjects][]
-     
+
             <[rigidbodygraphics][Fuselage][]
                 <[string8][GeometryList][ sorken_cockpit_out_50352_0 sorken_cockpit_out_55029_0 sorken_cockpit_out_55317_0 sorken_cockpit_out_55389_0 sorken_cockpit_out_56397_0 sorken_cockpit_out_56433_0 sorken_cockpit_out_57729_0 sorken_cockpit_out_57765_0 sorken_cockpit_out_59493_0 sorken_cockpit_out_59637_0 sorken_cockpit_out_62229_0 sorken_cockpit_out_62337_0 sorken_cockpit_out_62769_0 sorken_cockpit_out_62985_0 sorken_cockpit_out_64401_0 sorken_cockpit_out_66792_0 sorken_cockpit_out_67599_0 sorken_cockpit_out_68031_0 sorken_cockpit_out_68103_0 sorken_cockpit_out_68535_0 sorken_cockpit_out_69255_0 sorken_cockpit_out_69543_0 sorken_cockpit_out_0 sorken_cockpit_out_144_0 sorken_cockpit_out_216_0 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
-			
-			//Pedals 
+
+			//Pedals
             <[graphics_input][ServoRudderInput][]
                 <[uint32][InputID][ServoRudder.Output]>
                 <[float64][Scaling][-76.394]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_5][]
-                <[string8][Input][ServoRudderInput.Output]> 
+                <[string8][Input][ServoRudderInput.Output]>
                 <[tmvector2d][Map][(-20.0 0.349066) (20.0 -0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_288_0][]
@@ -613,7 +590,7 @@
                 <[tmvector3d][Pivot][2.875848 -0.001777 -0.738636]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_10][]
-                <[string8][Input][ServoRudderInput.Output]> 
+                <[string8][Input][ServoRudderInput.Output]>
                 <[tmvector2d][Map][(-20.0 -0.349066) (20.0 0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_792_0][]
@@ -639,7 +616,7 @@
                 <[string8][Graphics][Sorken_cockpit_out_288_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_23][]
-                <[string8][Input][ServoRudderInput.Output]> 
+                <[string8][Input][ServoRudderInput.Output]>
                 <[tmvector2d][Map][(-20.0 0.349066) (20.0 -0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_3024_0][]
@@ -650,19 +627,19 @@
                 <[tmvector3d][Axis][0.0 0.0 1.0]>
                 <[tmvector3d][Pivot][2.908728 -0.001777 -0.737979]>
             >
-			//Links 
+			//Links
             <[rigidbodygraphics][Sorken_cockpit_out_22626_0][]
                 <[string8][GeometryList][ sorken_cockpit_out_3384_0 sorken_cockpit_out_3420_0 sorken_cockpit_out_3852_0 sorken_cockpit_out_5292_0 sorken_cockpit_out_5580_0 sorken_cockpit_out_7218_0 sorken_cockpit_out_7506_0 sorken_cockpit_out_9144_0 sorken_cockpit_out_9432_0 sorken_cockpit_out_11070_0 sorken_cockpit_out_11358_0 sorken_cockpit_out_12996_0 sorken_cockpit_out_13284_0 sorken_cockpit_out_14922_0 sorken_cockpit_out_15210_0 sorken_cockpit_out_16848_0 sorken_cockpit_out_17136_0 sorken_cockpit_out_18774_0 sorken_cockpit_out_19062_0 sorken_cockpit_out_20700_0 sorken_cockpit_out_20988_0 sorken_cockpit_out_21186_0 sorken_cockpit_out_22626_0 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
-			//Stick 
+			//Stick
             <[graphics_input][ServoAileronInput][]
-                <[uint32][InputID][ServoLeftAileron.Output]> 
+                <[uint32][InputID][ServoLeftAileron.Output]>
                 <[float64][Scaling][3.8197]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_52][]
-                <[string8][Input][ServoAileronInput.Output]> 
+                <[string8][Input][ServoAileronInput.Output]>
                 <[tmvector2d][Map][(-1.0 -0.349066) (0.0 0.0) (1.0 0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_24930_0][]
@@ -672,9 +649,9 @@
                 <[string8][InputAngle][Sorken_cockpit_outMapping_52.Output]>
                 <[tmvector3d][Axis][-1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][2.424455 -0.004716 -0.703568]>
-            >  
+            >
             <[graphics_mapping][Sorken_cockpit_outMapping_56][]
-                <[string8][Input][ServoAileronInput.Output]> 
+                <[string8][Input][ServoAileronInput.Output]>
                 <[tmvector2d][Map][(-1.0 -0.349066) (0.0 0.0) (1.0 0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_24354_0][]
@@ -687,7 +664,7 @@
                 <[string8][Graphics][Sorken_cockpit_out_24930_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_62][]
-                <[string8][Input][ServoAileronInput.Output]> 
+                <[string8][Input][ServoAileronInput.Output]>
                 <[tmvector2d][Map][(-1.0 -0.349066) (0.0 0.0) (1.0 0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_24642_0][]
@@ -699,13 +676,13 @@
                 <[tmvector3d][Pivot][1.582352 -0.063065 -0.676269]>
                 <[string8][Graphics][Sorken_cockpit_out_24930_0]>
             >
-    
+
             <[graphics_input][ServoElevatorInput][]
-                <[uint32][InputID][ServoElevator.Output]> 
-                <[float64][Scaling][-3.8197]>   
+                <[uint32][InputID][ServoElevator.Output]>
+                <[float64][Scaling][-3.8197]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_68][]
-                <[string8][Input][ServoElevatorInput.Output]> 
+                <[string8][Input][ServoElevatorInput.Output]>
                 <[tmvector2d][Map][ (-1.0 -0.349066) (0.0 0.0) (1.0 0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_27222_0][]
@@ -716,9 +693,9 @@
                 <[tmvector3d][Axis][0.0 1.0 0.0]>
                 <[tmvector3d][Pivot][2.427160 -0.000277 -0.706261]>
                 <[string8][Graphics][Sorken_cockpit_out_24930_0]>
-            >  
+            >
             <[graphics_mapping][Sorken_cockpit_outMapping_72][]
-                <[string8][Input][ServoElevatorInput.Output]> 
+                <[string8][Input][ServoElevatorInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.366519) (0.0 0.0) (1.0 -0.366519)]>
             >
             <[hingedbodygraphics][Sorken_dummy_72][]
@@ -731,7 +708,7 @@
                 <[string8][Graphics][Sorken_cockpit_out_27222_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_75][]
-                <[string8][Input][ServoAileronInput.Output]> 
+                <[string8][Input][ServoAileronInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.017453) (0.0 0.0) (1.0 -0.017453)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_26502_0][]
@@ -744,7 +721,7 @@
                 <[string8][Graphics][Sorken_dummy_72]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_81][]
-                <[string8][Input][ServoElevatorInput.Output]> 
+                <[string8][Input][ServoElevatorInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.349066) (0.0 0.0) (1.0 -0.349066)]>
             >
             <[hingedbodygraphics][Sorken_dummy_81][]
@@ -757,7 +734,7 @@
                 <[string8][Graphics][Sorken_cockpit_out_27222_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_84][]
-                <[string8][Input][ServoAileronInput.Output]> 
+                <[string8][Input][ServoAileronInput.Output]>
                 <[tmvector2d][Map][(-1.0 -0.017453) (0.0 0.0) (1.0 0.017453)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_26862_0][]
@@ -769,24 +746,24 @@
                 <[tmvector3d][Pivot][2.458262 0.0 -0.588468]>
                 <[string8][Graphics][Sorken_dummy_81]>
             >
-    
+
             <[rigidbodygraphics][Sorken_cockpit_out_36438_0][]
                 <[string8][GeometryList][ sorken_cockpit_out_36438_0 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
-			//Right Aileron   
+			//Right Aileron
             <[rigidbodygraphics][Sorken_cockpit_out_38778_0][]
                 <[string8][GeometryList][ sorken_cockpit_out_38778_0 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
             <[graphics_input][ServoRightAileronInput][]
-                <[uint32][InputID][ServoRightAileron.Output]> 
+                <[uint32][InputID][ServoRightAileron.Output]>
                 <[float64][Scaling][3.8197]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_94][]
-                <[string8][Input][ServoRightAileronInput.Output]> 
+                <[string8][Input][ServoRightAileronInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.349066) (1.0 -0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_39354_0][]
@@ -797,7 +774,7 @@
                 <[string8][InputAngle][Sorken_cockpit_outMapping_94.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][0.663331 -4.412554 0.353649]>
-            > 
+            >
             <[graphics_mapping][Sorken_cockpit_outMapping_98][]
                 <[string8][Input][ServoRightAileronInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.27926) (1.0 -0.27926)]> //0.006981)]>
@@ -812,7 +789,7 @@
                 <[string8][Graphics][Sorken_cockpit_out_39354_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_104][]
-                <[string8][Input][ServoRightAileronInput.Output]> 
+                <[string8][Input][ServoRightAileronInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.27926) (1.0 -0.27926)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_39210_0][]
@@ -824,7 +801,7 @@
                 <[tmvector3d][Pivot][0.573036 -4.234960 0.416502]>
                 <[string8][Graphics][Sorken_cockpit_out_39354_0]>
             >
-			//Left Aileron   
+			//Left Aileron
             <[rigidbodygraphics][Sorken_cockpit_out_41604_0][]
                 <[string8][GeometryList][ sorken_cockpit_out_41604_0 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -832,7 +809,7 @@
             >
             <[graphics_input][ServoLeftAileronInput][]
                 <[uint32][InputID][ServoLeftAileron.Output]>
-                <[float64][Scaling][3.8197]>  
+                <[float64][Scaling][3.8197]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_115][]
                 <[string8][Input][ServoLeftAileronInput.Output]>
@@ -846,10 +823,10 @@
                 <[string8][InputAngle][Sorken_cockpit_outMapping_115.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.000001]>
                 <[tmvector3d][Pivot][0.662073 4.197606 0.356383]>
-            >  
+            >
             <[graphics_mapping][Sorken_cockpit_outMapping_119][]
-                <[string8][Input][ServoLeftAileronInput.Output]> 
-                <[tmvector2d][Map][(-1.0 -0.27926) (1.0 0.27926)]> 
+                <[string8][Input][ServoLeftAileronInput.Output]>
+                <[tmvector2d][Map][(-1.0 -0.27926) (1.0 0.27926)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_41892_0][]
                 <[string8][GeometryList][ sorken_cockpit_out_41892_0 ]>
@@ -861,7 +838,7 @@
                 <[string8][Graphics][Sorken_cockpit_out_42180_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_125][]
-                <[string8][Input][ServoLeftAileronInput.Output]> 
+                <[string8][Input][ServoLeftAileronInput.Output]>
                 <[tmvector2d][Map][(-1.0 -0.27926) (1.0 0.27926)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_42036_0][]
@@ -873,9 +850,9 @@
                 <[tmvector3d][Pivot][0.588998 4.241508 0.264178]>
                 <[string8][Graphics][Sorken_cockpit_out_42180_0]>
             >
-			//Elevator 
+			//Elevator
             <[graphics_mapping][Sorken_cockpit_outMapping_135][]
-                <[string8][Input][ServoElevatorInput.Output]> 
+                <[string8][Input][ServoElevatorInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.349066) (0.0 0.0) (1.0 -0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_44430_0][]
@@ -887,7 +864,7 @@
                 <[tmvector3d][Pivot][-2.409820 -0.004848 0.342470]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_140][]
-                <[string8][Input][ServoElevatorInput.Output]> 
+                <[string8][Input][ServoElevatorInput.Output]>
                 <[tmvector2d][Map][(-1.0 -0.349066) (0.0 0.0) (1.0 0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_46482_0][]
@@ -900,7 +877,7 @@
                 <[string8][Graphics][Sorken_cockpit_out_44430_0]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_146][]
-                <[string8][Input][ServoElevatorInput.Output]> 
+                <[string8][Input][ServoElevatorInput.Output]>
                 <[tmvector2d][Map][(-1.0 -0.349066) (0.0 0.0) (1.0 0.349066)]>
             >
             <[hingedbodygraphics][Sorken_cockpit_out_47058_0][]
@@ -912,9 +889,9 @@
                 <[tmvector3d][Pivot][-2.455600 0.027995 0.478301]>
                 <[string8][Graphics][Sorken_cockpit_out_44430_0]>
             >
-			//Rudder   
+			//Rudder
             <[graphics_mapping][Sorken_cockpit_outMapping_153][]
-                <[string8][Input][ServoRudderInput.Output]> 
+                <[string8][Input][ServoRudderInput.Output]>
                 <[tmvector2d][Map][(-20.0 0.349066) (20.0 -0.349066)]>
             >
             <[hingedbodygraphics][RudderGraphics][]
@@ -926,7 +903,7 @@
                 <[tmvector3d][Pivot][-2.384360 -0.005709 0.449565]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_158][]
-                <[string8][Input][ServoRudderInput.Output]> 
+                <[string8][Input][ServoRudderInput.Output]>
                 <[tmvector2d][Map][(-20.0 -0.349066)  (20.0 0.349066)]> //(0.0 -0.001623)
             >
             <[hingedbodygraphics][Sorken_cockpit_out_50064_0][]
@@ -939,7 +916,7 @@
                 <[string8][Graphics][RudderGraphics]>
             >
             <[graphics_mapping][Sorken_cockpit_outMapping_164][]
-                <[string8][Input][ServoRudderInput.Output]> 
+                <[string8][Input][ServoRudderInput.Output]>
                 <[tmvector2d][Map][(-20.0 0.349066) (20.0 -0.349066)]>  // (0.0 0.001623)
             >
             <[hingedbodygraphics][Sorken_cockpit_out_50208_0][]
@@ -957,32 +934,32 @@
                 <[string8][GeometryList][ ask21_cockpit_out_324_2 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][ShowInside][12]>   
+                <[uint32][ShowInside][12]>
             >
            <[graphics_input][UniversalTimeInput][]
                 <[uint32][InputID][UniversalTime.Output]>
-            >      
+            >
             <[graphics_flasher][BeaconRotation][]
                 <[string8][Function][Triangle]>
-                <[string8][InputTime][UniversalTimeInput.Output]>					
+                <[string8][InputTime][UniversalTimeInput.Output]>
                 <[float64][Period][8.493]>
                 <[float64][Minimum][0.0]>
-            >  
+            >
             <[graphics_mapping][obj3Input_0][]
-                <[uint32][Input][BeaconRotation.Output]> 
-                <[tmvector2d][Map][(0 0) (1 360) ]>  
+                <[uint32][Input][BeaconRotation.Output]>
+                <[tmvector2d][Map][(0 0) (1 360) ]>
             >
             <[graphics_mapping][obj3Mapping_90][]
                 <[string8][Input][obj3Input_0.Output]>
                 <[tmvector2d][Map][(0.0 0.0) (140.0 -0.434587) (280.0 0.174533) (360.0 -0.002443) ]>
-            >  
+            >
             <[hingedbodygraphics][PilotHead][]
                 <[string8][GeometryList][ ask21_cockpit_out_7392_2 helmet_glass helmet_out helmet_in helmet_pivot ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][obj3Mapping_90.Output]>
                 <[tmvector3d][Axis][0.0 0.0 -1.0]>
-                <[tmvector3d][Pivot][1.9315 0.0 -0.0841]> 
+                <[tmvector3d][Pivot][1.9315 0.0 -0.0841]>
                 <[uint32][ShowInside][12]>
             >
         >

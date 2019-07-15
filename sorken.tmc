@@ -3,8 +3,8 @@
         <[int][Version][210]>
         <[vec32array][ContactSpheres][ (2.499 0.0 -1.164 0.034) (0.304 -5.334 0.335 0.034) (0.304 5.333 0.335 0.034) ( -1.073 0.0 -1.11 0.034)]>
         <[string8][DisplayName][DFS SG 38 Schulgleiter]>
-        <[string8][DescriptionTextEN][Glider SG 38 was constructed by Flugzeugbau Schneider Grunau in Germany in the mid-1930s. In Sweden, the license plane was manufactured by Kockums Aerospace in Malmo, which was also selling kits to  aero-clubs. The Air Force ordered their kits from AB Aerospace (AFI) in Halmstad. The Air Force called the SG-38 for G101. There’s no inside cockpit, but the ouside is nearly a copy of the one hanging inside Visby terminal airport. The name “Sorken” is equal to a “small boy” in Gotland. 
-		Made by Krzysztof Kaniewski. 3D Design: Mikael Åstrand.]>
+        <[string8][DescriptionTextEN][Glider SG 38 was constructed by Flugzeugbau Schneider Grunau in Germany in the mid-1930s. In Sweden, the license plane was manufactured by Kockums Aerospace in Malmo, which was also selling kits to  aero-clubs. The Air Force ordered their kits from AB Aerospace (AFI) in Halmstad. The Air Force called the SG-38 for G101. There's no inside cockpit, but the ouside is nearly a copy of the one hanging inside Visby terminal airport. The name "Sorken" is equal to a "small boy" in Gotland. 
+For AeroflyFS2 made by Krzysztof Kaniewski. Original 3D model created by Mikael Åstrand.]>
 		<[float64][WingSpan][10.8]>
 		<[float64][Mass][100]>
 		<[float64][MaximumSpeed][31.0]>
